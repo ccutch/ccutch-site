@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% from 'logo.html' import logo %}
+
+
+{% block page_scripts %}
+<script src="/static/scripts/main.js"></script>
+{% endblock %}
+
+
+
+{% block content %}
+  <!-- Particles background -->
+  <div id="particles-js"></div>
+  <!-- Content -->
+  {{ logo(animated=True) }}
+{% endblock %}

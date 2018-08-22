@@ -1,0 +1,42 @@
+* {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+header {
+  display: flex;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: attr(data-color);
+  margin: 0px;
+  margin-left: 15px;
+  font-size: 2.4em;
+}
+
+
+[am-button] {
+  display: inline-block;
+  padding: 8px 6px;
+  background: blue;
+  color: white;
+}
+
+[am-button~="primary"] {
+  background: red;
+}
+
+[am-avatar] {
+  --size: 40px;
+  height: var(--size);
+  width: var(--size);
+  padding-top: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px #e2e2e2,
+              0 0 0 3px #f1f1f1,
+              0 0 0 4px #dadada;
+
+  border-radius: 50%;
+}
